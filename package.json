@@ -1,0 +1,30 @@
+{
+  "name": "code-connect01",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Demo: como mapear props, variantes, imports e componentes compostos com Figma Code Connect",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "figma:publish": "figma connect publish",
+    "figma:parse": "figma connect parse",
+    "tokens:export": "node scripts/export-tokens.mjs",
+    "tokens:verify": "node scripts/verify-tokens.mjs",
+    "tokens:verify-figma": "node scripts/verify-figma-parity.mjs",
+    "tokens:sync": "node scripts/sync-tokens-from-figma.mjs"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@figma/code-connect": "^1.3.4",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.3"
+  }
+}

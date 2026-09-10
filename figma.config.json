@@ -1,0 +1,15 @@
+{
+  "codeConnect": {
+    "parser": "react",
+    "include": ["src/**/*.tsx", "src/**/*.ts"],
+    "exclude": ["node_modules/**", "src/figma/templates/**"],
+    "importPaths": {
+      "src/components/*": "@/components"
+    },
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "interactiveSetupFigmaFileUrl": "https://www.figma.com/design/tydc2qcGIgzFu3C4DfEejk/DS-Code-Connect-Demo",
+    "label": "React"
+  }
+}

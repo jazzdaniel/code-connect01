@@ -1,0 +1,644 @@
+[
+  {
+    "collection": "Primitives",
+    "name": "color/brand/50",
+    "type": "COLOR",
+    "value": "#EFF6FF",
+    "scopes": [],
+    "css": "--color-brand-50"
+  },
+  {
+    "collection": "Primitives",
+    "name": "color/brand/100",
+    "type": "COLOR",
+    "value": "#DBEAFE",
+    "scopes": [],
+    "css": "--color-brand-100"
+  },
+  {
+    "collection": "Primitives",
+    "name": "color/brand/500",
+    "type": "COLOR",
+    "value": "#0F50DF",
+    "scopes": [],
+    "css": "--color-brand-500"
+  },
+  {
+    "collection": "Primitives",
+    "name": "color/brand/600",
+    "type": "COLOR",
+    "value": "#0E41D1",
+    "scopes": [],
+    "css": "--color-brand-600"
+  },
+  {
+    "collection": "Primitives",
+    "name": "color/brand/700",
+    "type": "COLOR",
+    "value": "#0F2C8B",
+    "scopes": [],
+    "css": "--color-brand-700"
+  },
+  {
+    "collection": "Primitives",
+    "name": "color/neutral/0",
+    "type": "COLOR",
+    "value": "#FFFFFF",
+    "scopes": [],
+    "css": "--color-neutral-0"
+  },
+  {
+    "collection": "Primitives",
+    "name": "color/neutral/50",
+    "type": "COLOR",
+    "value": "#F9FAFB",
+    "scopes": [],
+    "css": "--color-neutral-50"
+  },
+  {
+    "collection": "Primitives",
+    "name": "color/neutral/100",
+    "type": "COLOR",
+    "value": "#F3F4F6",
+    "scopes": [],
+    "css": "--color-neutral-100"
+  },
+  {
+    "collection": "Primitives",
+    "name": "color/neutral/200",
+    "type": "COLOR",
+    "value": "#E5E7EB",
+    "scopes": [],
+    "css": "--color-neutral-200"
+  },
+  {
+    "collection": "Primitives",
+    "name": "color/neutral/300",
+    "type": "COLOR",
+    "value": "#D1D5DB",
+    "scopes": [],
+    "css": "--color-neutral-300"
+  },
+  {
+    "collection": "Primitives",
+    "name": "color/neutral/500",
+    "type": "COLOR",
+    "value": "#6B7280",
+    "scopes": [],
+    "css": "--color-neutral-500"
+  },
+  {
+    "collection": "Primitives",
+    "name": "color/neutral/700",
+    "type": "COLOR",
+    "value": "#374151",
+    "scopes": [],
+    "css": "--color-neutral-700"
+  },
+  {
+    "collection": "Primitives",
+    "name": "color/neutral/900",
+    "type": "COLOR",
+    "value": "#111827",
+    "scopes": [],
+    "css": "--color-neutral-900"
+  },
+  {
+    "collection": "Primitives",
+    "name": "color/danger/50",
+    "type": "COLOR",
+    "value": "#FEF2F2",
+    "scopes": [],
+    "css": "--color-danger-50"
+  },
+  {
+    "collection": "Primitives",
+    "name": "color/danger/500",
+    "type": "COLOR",
+    "value": "#CB2222",
+    "scopes": [],
+    "css": "--color-danger-500"
+  },
+  {
+    "collection": "Primitives",
+    "name": "color/danger/600",
+    "type": "COLOR",
+    "value": "#6D0A0A",
+    "scopes": [],
+    "css": "--color-danger-600"
+  },
+  {
+    "collection": "Color",
+    "name": "bg/surface",
+    "type": "COLOR",
+    "value": "#FFFFFF",
+    "alias": "color/neutral/0",
+    "scopes": [
+      "FRAME_FILL",
+      "SHAPE_FILL"
+    ],
+    "css": "--bg-surface"
+  },
+  {
+    "collection": "Color",
+    "name": "bg/subtle",
+    "type": "COLOR",
+    "value": "#F9FAFB",
+    "alias": "color/neutral/50",
+    "scopes": [
+      "FRAME_FILL",
+      "SHAPE_FILL"
+    ],
+    "css": "--bg-subtle"
+  },
+  {
+    "collection": "Color",
+    "name": "bg/selected",
+    "type": "COLOR",
+    "value": "#EFF6FF",
+    "alias": "color/brand/50",
+    "scopes": [
+      "FRAME_FILL",
+      "SHAPE_FILL"
+    ],
+    "css": "--bg-selected"
+  },
+  {
+    "collection": "Color",
+    "name": "text/primary",
+    "type": "COLOR",
+    "value": "#111827",
+    "alias": "color/neutral/900",
+    "scopes": [
+      "TEXT_FILL"
+    ],
+    "css": "--text-primary"
+  },
+  {
+    "collection": "Color",
+    "name": "text/secondary",
+    "type": "COLOR",
+    "value": "#6B7280",
+    "alias": "color/neutral/500",
+    "scopes": [
+      "TEXT_FILL"
+    ],
+    "css": "--text-secondary"
+  },
+  {
+    "collection": "Color",
+    "name": "text/on-brand",
+    "type": "COLOR",
+    "value": "#FFFFFF",
+    "alias": "color/neutral/0",
+    "scopes": [
+      "TEXT_FILL"
+    ],
+    "css": "--text-on-brand"
+  },
+  {
+    "collection": "Color",
+    "name": "text/brand",
+    "type": "COLOR",
+    "value": "#0E41D1",
+    "alias": "color/brand/600",
+    "scopes": [
+      "TEXT_FILL"
+    ],
+    "css": "--text-brand"
+  },
+  {
+    "collection": "Color",
+    "name": "text/danger",
+    "type": "COLOR",
+    "value": "#CB2222",
+    "alias": "color/danger/500",
+    "scopes": [
+      "TEXT_FILL"
+    ],
+    "css": "--text-danger"
+  },
+  {
+    "collection": "Color",
+    "name": "border/default",
+    "type": "COLOR",
+    "value": "#E5E7EB",
+    "alias": "color/neutral/200",
+    "scopes": [
+      "STROKE_COLOR"
+    ],
+    "css": "--border-default"
+  },
+  {
+    "collection": "Color",
+    "name": "border/strong",
+    "type": "COLOR",
+    "value": "#D1D5DB",
+    "alias": "color/neutral/300",
+    "scopes": [
+      "STROKE_COLOR"
+    ],
+    "css": "--border-strong"
+  },
+  {
+    "collection": "Color",
+    "name": "border/brand",
+    "type": "COLOR",
+    "value": "#0F50DF",
+    "alias": "color/brand/500",
+    "scopes": [
+      "STROKE_COLOR"
+    ],
+    "css": "--border-brand"
+  },
+  {
+    "collection": "Color",
+    "name": "action/primary/default",
+    "type": "COLOR",
+    "value": "#0F50DF",
+    "alias": "color/brand/500",
+    "scopes": [
+      "FRAME_FILL",
+      "SHAPE_FILL"
+    ],
+    "css": "--action-primary-default"
+  },
+  {
+    "collection": "Color",
+    "name": "action/primary/hover",
+    "type": "COLOR",
+    "value": "#0E41D1",
+    "alias": "color/brand/600",
+    "scopes": [
+      "FRAME_FILL",
+      "SHAPE_FILL"
+    ],
+    "css": "--action-primary-hover"
+  },
+  {
+    "collection": "Color",
+    "name": "action/danger/default",
+    "type": "COLOR",
+    "value": "#CB2222",
+    "alias": "color/danger/500",
+    "scopes": [
+      "FRAME_FILL",
+      "SHAPE_FILL"
+    ],
+    "css": "--action-danger-default"
+  },
+  {
+    "collection": "Color",
+    "name": "action/danger/hover",
+    "type": "COLOR",
+    "value": "#6D0A0A",
+    "alias": "color/danger/600",
+    "scopes": [
+      "FRAME_FILL",
+      "SHAPE_FILL"
+    ],
+    "css": "--action-danger-hover"
+  },
+  {
+    "collection": "Spacing",
+    "name": "space/1",
+    "type": "FLOAT",
+    "value": 4,
+    "scopes": [
+      "GAP",
+      "WIDTH_HEIGHT"
+    ],
+    "css": "--space-1"
+  },
+  {
+    "collection": "Spacing",
+    "name": "space/2",
+    "type": "FLOAT",
+    "value": 8,
+    "scopes": [
+      "GAP",
+      "WIDTH_HEIGHT"
+    ],
+    "css": "--space-2"
+  },
+  {
+    "collection": "Spacing",
+    "name": "space/3",
+    "type": "FLOAT",
+    "value": 12,
+    "scopes": [
+      "GAP",
+      "WIDTH_HEIGHT"
+    ],
+    "css": "--space-3"
+  },
+  {
+    "collection": "Spacing",
+    "name": "space/4",
+    "type": "FLOAT",
+    "value": 16,
+    "scopes": [
+      "GAP",
+      "WIDTH_HEIGHT"
+    ],
+    "css": "--space-4"
+  },
+  {
+    "collection": "Spacing",
+    "name": "space/5",
+    "type": "FLOAT",
+    "value": 20,
+    "scopes": [
+      "GAP",
+      "WIDTH_HEIGHT"
+    ],
+    "css": "--space-5"
+  },
+  {
+    "collection": "Spacing",
+    "name": "space/6",
+    "type": "FLOAT",
+    "value": 24,
+    "scopes": [
+      "GAP",
+      "WIDTH_HEIGHT"
+    ],
+    "css": "--space-6"
+  },
+  {
+    "collection": "Spacing",
+    "name": "space/8",
+    "type": "FLOAT",
+    "value": 32,
+    "scopes": [
+      "GAP",
+      "WIDTH_HEIGHT"
+    ],
+    "css": "--space-8"
+  },
+  {
+    "collection": "Spacing",
+    "name": "space/10",
+    "type": "FLOAT",
+    "value": 40,
+    "scopes": [
+      "GAP",
+      "WIDTH_HEIGHT"
+    ],
+    "css": "--space-10"
+  },
+  {
+    "collection": "Spacing",
+    "name": "space/12",
+    "type": "FLOAT",
+    "value": 48,
+    "scopes": [
+      "GAP",
+      "WIDTH_HEIGHT"
+    ],
+    "css": "--space-12"
+  },
+  {
+    "collection": "Spacing",
+    "name": "radius/sm",
+    "type": "FLOAT",
+    "value": 6,
+    "scopes": [
+      "CORNER_RADIUS"
+    ],
+    "css": "--radius-sm"
+  },
+  {
+    "collection": "Spacing",
+    "name": "radius/md",
+    "type": "FLOAT",
+    "value": 8,
+    "scopes": [
+      "CORNER_RADIUS"
+    ],
+    "css": "--radius-md"
+  },
+  {
+    "collection": "Spacing",
+    "name": "radius/lg",
+    "type": "FLOAT",
+    "value": 12,
+    "scopes": [
+      "CORNER_RADIUS"
+    ],
+    "css": "--radius-lg"
+  },
+  {
+    "collection": "Spacing",
+    "name": "radius/full",
+    "type": "FLOAT",
+    "value": 999,
+    "scopes": [
+      "CORNER_RADIUS"
+    ],
+    "css": "--radius-full"
+  },
+  {
+    "collection": "Spacing",
+    "name": "size/control/sm",
+    "type": "FLOAT",
+    "value": 32,
+    "scopes": [
+      "WIDTH_HEIGHT"
+    ],
+    "css": "--size-control-sm"
+  },
+  {
+    "collection": "Spacing",
+    "name": "size/control/md",
+    "type": "FLOAT",
+    "value": 40,
+    "scopes": [
+      "WIDTH_HEIGHT"
+    ],
+    "css": "--size-control-md"
+  },
+  {
+    "collection": "Spacing",
+    "name": "size/control/lg",
+    "type": "FLOAT",
+    "value": 48,
+    "scopes": [
+      "WIDTH_HEIGHT"
+    ],
+    "css": "--size-control-lg"
+  },
+  {
+    "collection": "Spacing",
+    "name": "size/icon/sm",
+    "type": "FLOAT",
+    "value": 16,
+    "scopes": [
+      "WIDTH_HEIGHT"
+    ],
+    "css": "--size-icon-sm"
+  },
+  {
+    "collection": "Spacing",
+    "name": "size/icon/md",
+    "type": "FLOAT",
+    "value": 20,
+    "scopes": [
+      "WIDTH_HEIGHT"
+    ],
+    "css": "--size-icon-md"
+  },
+  {
+    "collection": "Spacing",
+    "name": "size/illustration/sm",
+    "type": "FLOAT",
+    "value": 64,
+    "scopes": [
+      "WIDTH_HEIGHT"
+    ],
+    "css": "--size-illustration-sm"
+  },
+  {
+    "collection": "Spacing",
+    "name": "size/illustration/md",
+    "type": "FLOAT",
+    "value": 96,
+    "scopes": [
+      "WIDTH_HEIGHT"
+    ],
+    "css": "--size-illustration-md"
+  },
+  {
+    "collection": "Spacing",
+    "name": "border/width/thin",
+    "type": "FLOAT",
+    "value": 1,
+    "scopes": [
+      "STROKE_FLOAT"
+    ],
+    "css": "--border-width-thin"
+  },
+  {
+    "collection": "Typography",
+    "name": "font/family",
+    "type": "STRING",
+    "value": "Inter",
+    "scopes": [
+      "FONT_FAMILY"
+    ],
+    "css": "--font-family"
+  },
+  {
+    "collection": "Typography",
+    "name": "font/size/xs",
+    "type": "FLOAT",
+    "value": 12,
+    "scopes": [
+      "FONT_SIZE"
+    ],
+    "css": "--font-size-xs"
+  },
+  {
+    "collection": "Typography",
+    "name": "font/size/sm",
+    "type": "FLOAT",
+    "value": 14,
+    "scopes": [
+      "FONT_SIZE"
+    ],
+    "css": "--font-size-sm"
+  },
+  {
+    "collection": "Typography",
+    "name": "font/size/md",
+    "type": "FLOAT",
+    "value": 16,
+    "scopes": [
+      "FONT_SIZE"
+    ],
+    "css": "--font-size-md"
+  },
+  {
+    "collection": "Typography",
+    "name": "font/size/lg",
+    "type": "FLOAT",
+    "value": 20,
+    "scopes": [
+      "FONT_SIZE"
+    ],
+    "css": "--font-size-lg"
+  },
+  {
+    "collection": "Typography",
+    "name": "font/line-height/xs",
+    "type": "FLOAT",
+    "value": 16,
+    "scopes": [
+      "LINE_HEIGHT"
+    ],
+    "css": "--line-height-xs"
+  },
+  {
+    "collection": "Typography",
+    "name": "font/line-height/sm",
+    "type": "FLOAT",
+    "value": 20,
+    "scopes": [
+      "LINE_HEIGHT"
+    ],
+    "css": "--line-height-sm"
+  },
+  {
+    "collection": "Typography",
+    "name": "font/line-height/md",
+    "type": "FLOAT",
+    "value": 24,
+    "scopes": [
+      "LINE_HEIGHT"
+    ],
+    "css": "--line-height-md"
+  },
+  {
+    "collection": "Typography",
+    "name": "font/line-height/lg",
+    "type": "FLOAT",
+    "value": 28,
+    "scopes": [
+      "LINE_HEIGHT"
+    ],
+    "css": "--line-height-lg"
+  },
+  {
+    "collection": "Typography",
+    "name": "font/weight/regular",
+    "type": "STRING",
+    "value": "Regular",
+    "cssValue": "400",
+    "scopes": [
+      "FONT_STYLE"
+    ],
+    "css": "--font-weight-regular"
+  },
+  {
+    "collection": "Typography",
+    "name": "font/weight/medium",
+    "type": "STRING",
+    "value": "Medium",
+    "cssValue": "500",
+    "scopes": [
+      "FONT_STYLE"
+    ],
+    "css": "--font-weight-medium"
+  },
+  {
+    "collection": "Typography",
+    "name": "font/weight/semibold",
+    "type": "STRING",
+    "value": "Semi Bold",
+    "cssValue": "600",
+    "scopes": [
+      "FONT_STYLE"
+    ],
+    "css": "--font-weight-semibold"
+  }
+]
