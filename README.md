@@ -4,6 +4,7 @@ Demo de duas pontas: uma pequena biblioteca **React + TypeScript** e o **mesmo
 design system replicado no Figma**, com tokens em paridade exata e os arquivos
 de **Code Connect** que ligam os dois.
 
+- **Repo:** https://github.com/jazzdaniel/code-connect01
 - **Figma:** https://www.figma.com/design/tydc2qcGIgzFu3C4DfEejk/DS-Code-Connect-Demo
 - **App:** `npm run dev`
 
@@ -131,13 +132,15 @@ npx figma connect parse      # valida sem enviar nada — 6 mapeamentos, 0 erros
 npx figma connect publish    # precisa de FIGMA_ACCESS_TOKEN
 ```
 
-Duas condições antes do `publish` funcionar de verdade:
+Falta **uma** condição para o `publish` funcionar de verdade:
 
-1. **Os componentes precisam estar publicados numa team library.** O arquivo foi
-   criado agora e ainda não foi publicado — faça isso no Figma (Assets →
-   Publish) antes de rodar o `publish`.
-2. **Link para o código-fonte** só aparece se o diretório for um repo git com
-   remote; aqui não é, então o campo `source` sai vazio no `parse`.
+- **Os componentes precisam estar publicados numa team library.** O arquivo do
+  Figma ainda não foi publicado — faça isso no Figma (Assets → Publish) antes de
+  rodar o `publish`.
+
+O link para o código-fonte já resolve: o `source` de cada mapeamento aponta para
+o arquivo no GitHub (`.../blob/main/src/components/...`). Isso depende do
+diretório ser um repo git com remote — sem remote, o campo sai vazio no `parse`.
 
 ## Armadilhas encontradas ao montar esta demo
 
