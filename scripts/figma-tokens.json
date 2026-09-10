@@ -1,43 +1,131 @@
 [
   {
     "collection": "Primitives",
-    "name": "color/brand/50",
+    "name": "color/ink/900",
     "type": "COLOR",
-    "value": "#EFF6FF",
+    "value": "#180502",
     "scopes": [],
-    "css": "--color-brand-50"
+    "css": "--color-ink-900"
   },
   {
     "collection": "Primitives",
-    "name": "color/brand/100",
+    "name": "color/maroon/800",
     "type": "COLOR",
-    "value": "#DBEAFE",
+    "value": "#401A1B",
     "scopes": [],
-    "css": "--color-brand-100"
+    "css": "--color-maroon-800"
   },
   {
     "collection": "Primitives",
-    "name": "color/brand/500",
+    "name": "color/maroon/900",
     "type": "COLOR",
-    "value": "#0F50DF",
+    "value": "#360C0C",
     "scopes": [],
-    "css": "--color-brand-500"
+    "css": "--color-maroon-900"
   },
   {
     "collection": "Primitives",
-    "name": "color/brand/600",
+    "name": "color/plum/700",
     "type": "COLOR",
-    "value": "#0E41D1",
+    "value": "#633040",
     "scopes": [],
-    "css": "--color-brand-600"
+    "css": "--color-plum-700"
   },
   {
     "collection": "Primitives",
-    "name": "color/brand/700",
+    "name": "color/rose/400",
     "type": "COLOR",
-    "value": "#0F2C8B",
+    "value": "#C76689",
     "scopes": [],
-    "css": "--color-brand-700"
+    "css": "--color-rose-400"
+  },
+  {
+    "collection": "Primitives",
+    "name": "color/rose/600",
+    "type": "COLOR",
+    "value": "#9E4565",
+    "scopes": [],
+    "css": "--color-rose-600"
+  },
+  {
+    "collection": "Primitives",
+    "name": "color/sand/400",
+    "type": "COLOR",
+    "value": "#E2B27D",
+    "scopes": [],
+    "css": "--color-sand-400"
+  },
+  {
+    "collection": "Primitives",
+    "name": "color/cream/100",
+    "type": "COLOR",
+    "value": "#F6E6B9",
+    "scopes": [],
+    "css": "--color-cream-100"
+  },
+  {
+    "collection": "Primitives",
+    "name": "color/gold/500",
+    "type": "COLOR",
+    "value": "#C6983A",
+    "scopes": [],
+    "css": "--color-gold-500"
+  },
+  {
+    "collection": "Primitives",
+    "name": "color/olive/500",
+    "type": "COLOR",
+    "value": "#828F27",
+    "scopes": [],
+    "css": "--color-olive-500"
+  },
+  {
+    "collection": "Primitives",
+    "name": "color/teal/500",
+    "type": "COLOR",
+    "value": "#0D9288",
+    "scopes": [],
+    "css": "--color-teal-500"
+  },
+  {
+    "collection": "Primitives",
+    "name": "color/sky/500",
+    "type": "COLOR",
+    "value": "#4FA2DC",
+    "scopes": [],
+    "css": "--color-sky-500"
+  },
+  {
+    "collection": "Primitives",
+    "name": "color/orange/500",
+    "type": "COLOR",
+    "value": "#CB4B16",
+    "scopes": [],
+    "css": "--color-orange-500"
+  },
+  {
+    "collection": "Primitives",
+    "name": "color/red/500",
+    "type": "COLOR",
+    "value": "#C91521",
+    "scopes": [],
+    "css": "--color-red-500"
+  },
+  {
+    "collection": "Primitives",
+    "name": "color/magenta/500",
+    "type": "COLOR",
+    "value": "#D91072",
+    "scopes": [],
+    "css": "--color-magenta-500"
+  },
+  {
+    "collection": "Primitives",
+    "name": "color/indigo/900",
+    "type": "COLOR",
+    "value": "#2A1E5B",
+    "scopes": [],
+    "css": "--color-indigo-900"
   },
   {
     "collection": "Primitives",
@@ -104,35 +192,19 @@
     "css": "--color-neutral-900"
   },
   {
-    "collection": "Primitives",
-    "name": "color/danger/50",
-    "type": "COLOR",
-    "value": "#FEF2F2",
-    "scopes": [],
-    "css": "--color-danger-50"
-  },
-  {
-    "collection": "Primitives",
-    "name": "color/danger/500",
-    "type": "COLOR",
-    "value": "#CB2222",
-    "scopes": [],
-    "css": "--color-danger-500"
-  },
-  {
-    "collection": "Primitives",
-    "name": "color/danger/600",
-    "type": "COLOR",
-    "value": "#6D0A0A",
-    "scopes": [],
-    "css": "--color-danger-600"
-  },
-  {
     "collection": "Color",
     "name": "bg/surface",
     "type": "COLOR",
-    "value": "#FFFFFF",
-    "alias": "color/neutral/0",
+    "valuesByMode": {
+      "Ember": "#FFFFFF",
+      "Rose": "#FFFFFF",
+      "Deep": "#FFFFFF"
+    },
+    "aliasByMode": {
+      "Ember": "color/neutral/0",
+      "Rose": "color/neutral/0",
+      "Deep": "color/neutral/0"
+    },
     "scopes": [
       "FRAME_FILL",
       "SHAPE_FILL"
@@ -143,8 +215,16 @@
     "collection": "Color",
     "name": "bg/subtle",
     "type": "COLOR",
-    "value": "#F9FAFB",
-    "alias": "color/neutral/50",
+    "valuesByMode": {
+      "Ember": "#F9FAFB",
+      "Rose": "#F9FAFB",
+      "Deep": "#F9FAFB"
+    },
+    "aliasByMode": {
+      "Ember": "color/neutral/50",
+      "Rose": "color/neutral/50",
+      "Deep": "color/neutral/50"
+    },
     "scopes": [
       "FRAME_FILL",
       "SHAPE_FILL"
@@ -155,8 +235,16 @@
     "collection": "Color",
     "name": "bg/selected",
     "type": "COLOR",
-    "value": "#EFF6FF",
-    "alias": "color/brand/50",
+    "valuesByMode": {
+      "Ember": "#F6E6B9",
+      "Rose": "#E2B27D",
+      "Deep": "#4FA2DC"
+    },
+    "aliasByMode": {
+      "Ember": "color/cream/100",
+      "Rose": "color/sand/400",
+      "Deep": "color/sky/500"
+    },
     "scopes": [
       "FRAME_FILL",
       "SHAPE_FILL"
@@ -167,8 +255,16 @@
     "collection": "Color",
     "name": "text/primary",
     "type": "COLOR",
-    "value": "#111827",
-    "alias": "color/neutral/900",
+    "valuesByMode": {
+      "Ember": "#180502",
+      "Rose": "#360C0C",
+      "Deep": "#2A1E5B"
+    },
+    "aliasByMode": {
+      "Ember": "color/ink/900",
+      "Rose": "color/maroon/900",
+      "Deep": "color/indigo/900"
+    },
     "scopes": [
       "TEXT_FILL"
     ],
@@ -178,8 +274,16 @@
     "collection": "Color",
     "name": "text/secondary",
     "type": "COLOR",
-    "value": "#6B7280",
-    "alias": "color/neutral/500",
+    "valuesByMode": {
+      "Ember": "#6B7280",
+      "Rose": "#6B7280",
+      "Deep": "#6B7280"
+    },
+    "aliasByMode": {
+      "Ember": "color/neutral/500",
+      "Rose": "color/neutral/500",
+      "Deep": "color/neutral/500"
+    },
     "scopes": [
       "TEXT_FILL"
     ],
@@ -189,8 +293,16 @@
     "collection": "Color",
     "name": "text/on-brand",
     "type": "COLOR",
-    "value": "#FFFFFF",
-    "alias": "color/neutral/0",
+    "valuesByMode": {
+      "Ember": "#FFFFFF",
+      "Rose": "#FFFFFF",
+      "Deep": "#FFFFFF"
+    },
+    "aliasByMode": {
+      "Ember": "color/neutral/0",
+      "Rose": "color/neutral/0",
+      "Deep": "color/neutral/0"
+    },
     "scopes": [
       "TEXT_FILL"
     ],
@@ -200,8 +312,16 @@
     "collection": "Color",
     "name": "text/brand",
     "type": "COLOR",
-    "value": "#0E41D1",
-    "alias": "color/brand/600",
+    "valuesByMode": {
+      "Ember": "#401A1B",
+      "Rose": "#633040",
+      "Deep": "#2A1E5B"
+    },
+    "aliasByMode": {
+      "Ember": "color/maroon/800",
+      "Rose": "color/plum/700",
+      "Deep": "color/indigo/900"
+    },
     "scopes": [
       "TEXT_FILL"
     ],
@@ -211,8 +331,16 @@
     "collection": "Color",
     "name": "text/danger",
     "type": "COLOR",
-    "value": "#CB2222",
-    "alias": "color/danger/500",
+    "valuesByMode": {
+      "Ember": "#C91521",
+      "Rose": "#C91521",
+      "Deep": "#C91521"
+    },
+    "aliasByMode": {
+      "Ember": "color/red/500",
+      "Rose": "color/red/500",
+      "Deep": "color/red/500"
+    },
     "scopes": [
       "TEXT_FILL"
     ],
@@ -222,8 +350,16 @@
     "collection": "Color",
     "name": "border/default",
     "type": "COLOR",
-    "value": "#E5E7EB",
-    "alias": "color/neutral/200",
+    "valuesByMode": {
+      "Ember": "#E5E7EB",
+      "Rose": "#E5E7EB",
+      "Deep": "#E5E7EB"
+    },
+    "aliasByMode": {
+      "Ember": "color/neutral/200",
+      "Rose": "color/neutral/200",
+      "Deep": "color/neutral/200"
+    },
     "scopes": [
       "STROKE_COLOR"
     ],
@@ -233,8 +369,16 @@
     "collection": "Color",
     "name": "border/strong",
     "type": "COLOR",
-    "value": "#D1D5DB",
-    "alias": "color/neutral/300",
+    "valuesByMode": {
+      "Ember": "#D1D5DB",
+      "Rose": "#D1D5DB",
+      "Deep": "#D1D5DB"
+    },
+    "aliasByMode": {
+      "Ember": "color/neutral/300",
+      "Rose": "color/neutral/300",
+      "Deep": "color/neutral/300"
+    },
     "scopes": [
       "STROKE_COLOR"
     ],
@@ -244,8 +388,16 @@
     "collection": "Color",
     "name": "border/brand",
     "type": "COLOR",
-    "value": "#0F50DF",
-    "alias": "color/brand/500",
+    "valuesByMode": {
+      "Ember": "#CB4B16",
+      "Rose": "#9E4565",
+      "Deep": "#0D9288"
+    },
+    "aliasByMode": {
+      "Ember": "color/orange/500",
+      "Rose": "color/rose/600",
+      "Deep": "color/teal/500"
+    },
     "scopes": [
       "STROKE_COLOR"
     ],
@@ -255,8 +407,16 @@
     "collection": "Color",
     "name": "action/primary/default",
     "type": "COLOR",
-    "value": "#0F50DF",
-    "alias": "color/brand/500",
+    "valuesByMode": {
+      "Ember": "#CB4B16",
+      "Rose": "#9E4565",
+      "Deep": "#2A1E5B"
+    },
+    "aliasByMode": {
+      "Ember": "color/orange/500",
+      "Rose": "color/rose/600",
+      "Deep": "color/indigo/900"
+    },
     "scopes": [
       "FRAME_FILL",
       "SHAPE_FILL"
@@ -267,8 +427,16 @@
     "collection": "Color",
     "name": "action/primary/hover",
     "type": "COLOR",
-    "value": "#0E41D1",
-    "alias": "color/brand/600",
+    "valuesByMode": {
+      "Ember": "#401A1B",
+      "Rose": "#633040",
+      "Deep": "#180502"
+    },
+    "aliasByMode": {
+      "Ember": "color/maroon/800",
+      "Rose": "color/plum/700",
+      "Deep": "color/ink/900"
+    },
     "scopes": [
       "FRAME_FILL",
       "SHAPE_FILL"
@@ -279,8 +447,16 @@
     "collection": "Color",
     "name": "action/danger/default",
     "type": "COLOR",
-    "value": "#CB2222",
-    "alias": "color/danger/500",
+    "valuesByMode": {
+      "Ember": "#C91521",
+      "Rose": "#C91521",
+      "Deep": "#C91521"
+    },
+    "aliasByMode": {
+      "Ember": "color/red/500",
+      "Rose": "color/red/500",
+      "Deep": "color/red/500"
+    },
     "scopes": [
       "FRAME_FILL",
       "SHAPE_FILL"
@@ -291,8 +467,16 @@
     "collection": "Color",
     "name": "action/danger/hover",
     "type": "COLOR",
-    "value": "#6D0A0A",
-    "alias": "color/danger/600",
+    "valuesByMode": {
+      "Ember": "#360C0C",
+      "Rose": "#360C0C",
+      "Deep": "#180502"
+    },
+    "aliasByMode": {
+      "Ember": "color/maroon/900",
+      "Rose": "color/maroon/900",
+      "Deep": "color/ink/900"
+    },
     "scopes": [
       "FRAME_FILL",
       "SHAPE_FILL"

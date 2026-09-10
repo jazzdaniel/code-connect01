@@ -13,6 +13,7 @@
  * Complementa scripts/export-tokens.mjs, que faz o caminho inverso.
  */
 import { readFileSync, writeFileSync } from 'node:fs'
+import { loadTokens, flatten } from './load-tokens.mjs'
 
 const [dumpPath, ...flags] = process.argv.slice(2)
 const dryRun = flags.includes('--dry-run')
@@ -22,7 +23,8 @@ if (!dumpPath) {
 }
 
 const figma = JSON.parse(readFileSync(dumpPath, 'utf8')).variables
-const code = JSON.parse(readFileSync('scripts/figma-tokens.json', 'utf8'))
+const t = await loadTokens()
+const code = flatten(t)
 
 const codeByName = new Map(code.map((t) => [t.name, t]))
 const figmaByName = new Map(figma.map((v) => [v.name, v]))
@@ -40,16 +42,37 @@ for (const t of code) {
 
 /** mudanças de valor — essas sim sincronizam */
 const changes = []
-for (const t of code) {
-  const v = figmaByName.get(t.name)
+const modeChanges = []
+for (const row of code) {
+  const v = figmaByName.get(row.name)
   if (!v) continue
-  const before = t.type === 'COLOR' ? String(t.value).toUpperCase() : t.value
-  const after = t.type === 'COLOR' ? String(v.value).toUpperCase() : v.value
-  if (String(before) !== String(after)) changes.push({ ...t, before, after })
+  if (row.valuesByMode) {
+    // Semânticos são aliases por modo. Trocar o alias de um modo é editar a
+    // tabela `semantic` em tokens.ts, então reportamos com a linha exata a
+    // mudar em vez de reescrever a expressão.
+    for (const [mode, alias] of Object.entries(row.aliasByMode)) {
+      const fAlias = v.aliasByMode ? v.aliasByMode[mode] : null
+      if (fAlias && fAlias !== alias) {
+        const [, family, step] = fAlias.split('/')
+        modeChanges.push(
+          `${row.name}[${mode}]: ${alias} -> ${fAlias}\n      em tokens.ts, bloco ${mode}: '${row.name}': color.${family}[${step}],`,
+        )
+      }
+    }
+    continue
+  }
+  const before = row.type === 'COLOR' ? String(row.value).toUpperCase() : row.value
+  const after = row.type === 'COLOR' ? String(v.value).toUpperCase() : v.value
+  if (String(before) !== String(after)) changes.push({ ...row, before, after })
+}
+
+if (modeChanges.length) {
+  console.log(`\n${modeChanges.length} alias de modo mudou no Figma (edite tokens.ts à mão):`)
+  for (const m of modeChanges) console.log('    - ' + m)
 }
 
 if (!changes.length) {
-  console.log('✓ nenhum valor divergente — código já está igual ao Figma')
+  if (!modeChanges.length) console.log('✓ nenhum valor divergente — código já está igual ao Figma')
   if (warnings.length) console.warn('\n⚠ ' + warnings.join('\n⚠ '))
   process.exit(0)
 }
@@ -121,4 +144,4 @@ if (skipped.length) {
   for (const s of skipped) console.warn('  ' + s)
 }
 if (warnings.length) console.warn('\n⚠ ' + warnings.join('\n⚠ '))
-if (!dryRun) console.log('\nAgora rode: npm run tokens:export && npm run tokens:verify')
+if (!dryRun) console.log('\nAgora rode: npm run tokens:build && npm run tokens:verify && npm run tokens:contrast')

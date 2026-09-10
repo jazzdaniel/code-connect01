@@ -13,6 +13,9 @@
     "tokens:export": "node scripts/export-tokens.mjs",
     "tokens:verify": "node scripts/verify-tokens.mjs",
     "tokens:verify-figma": "node scripts/verify-figma-parity.mjs",
+    "tokens:css": "node scripts/build-css.mjs",
+    "tokens:build": "npm run tokens:export && npm run tokens:css",
+    "tokens:contrast": "node scripts/verify-contrast.mjs",
     "tokens:sync": "node scripts/sync-tokens-from-figma.mjs"
   },
   "dependencies": {

@@ -1,11 +1,54 @@
-/* Gerado a partir de src/tokens/tokens.ts — mesmos nomes das Figma Variables. */
+/*
+ * GERADO por scripts/build-css.mjs a partir de src/tokens/tokens.ts.
+ * Não editar à mão — rode `npm run tokens:css`.
+ *
+ * Os blocos [data-brand] correspondem 1:1 aos modos da collection "Color"
+ * no Figma. Mesmos nomes, mesmos valores.
+ */
 :root {
-  /* color/brand */
-  --color-brand-50: #EFF6FF;
-  --color-brand-100: #DBEAFE;
-  --color-brand-500: #0F50DF;
-  --color-brand-600: #0E41D1;
-  --color-brand-700: #0F2C8B;
+  /* color/ink */
+  --color-ink-900: #180502;
+
+  /* color/maroon */
+  --color-maroon-800: #401A1B;
+  --color-maroon-900: #360C0C;
+
+  /* color/plum */
+  --color-plum-700: #633040;
+
+  /* color/rose */
+  --color-rose-400: #C76689;
+  --color-rose-600: #9E4565;
+
+  /* color/sand */
+  --color-sand-400: #E2B27D;
+
+  /* color/cream */
+  --color-cream-100: #F6E6B9;
+
+  /* color/gold */
+  --color-gold-500: #C6983A;
+
+  /* color/olive */
+  --color-olive-500: #828F27;
+
+  /* color/teal */
+  --color-teal-500: #0D9288;
+
+  /* color/sky */
+  --color-sky-500: #4FA2DC;
+
+  /* color/orange */
+  --color-orange-500: #CB4B16;
+
+  /* color/red */
+  --color-red-500: #C91521;
+
+  /* color/magenta */
+  --color-magenta-500: #D91072;
+
+  /* color/indigo */
+  --color-indigo-900: #2A1E5B;
 
   /* color/neutral */
   --color-neutral-0: #FFFFFF;
@@ -16,28 +59,6 @@
   --color-neutral-500: #6B7280;
   --color-neutral-700: #374151;
   --color-neutral-900: #111827;
-
-  /* color/danger */
-  --color-danger-50: #FEF2F2;
-  --color-danger-500: #CB2222;
-  --color-danger-600: #6D0A0A;
-
-  /* semantic */
-  --bg-surface: var(--color-neutral-0);
-  --bg-subtle: var(--color-neutral-50);
-  --bg-selected: var(--color-brand-50);
-  --text-primary: var(--color-neutral-900);
-  --text-secondary: var(--color-neutral-500);
-  --text-on-brand: var(--color-neutral-0);
-  --text-brand: var(--color-brand-600);
-  --text-danger: var(--color-danger-500);
-  --border-default: var(--color-neutral-200);
-  --border-strong: var(--color-neutral-300);
-  --border-brand: var(--color-brand-500);
-  --action-primary-default: var(--color-brand-500);
-  --action-primary-hover: var(--color-brand-600);
-  --action-danger-default: var(--color-danger-500);
-  --action-danger-hover: var(--color-danger-600);
 
   /* space */
   --space-1: 4px;
@@ -71,14 +92,73 @@
   --font-size-sm: 14px;
   --font-size-md: 16px;
   --font-size-lg: 20px;
-  --font-weight-regular: 400;
-  --font-weight-medium: 500;
-  --font-weight-semibold: 600;
   --line-height-xs: 16px;
   --line-height-sm: 20px;
   --line-height-md: 24px;
   --line-height-lg: 28px;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
 
   /* border */
   --border-width-thin: 1px;
+
+}
+
+/* ── marca Ember (padrão) — modo "Ember" no Figma ── */
+:root,
+[data-brand='ember'] {
+  --bg-surface: var(--color-neutral-0); /* #FFFFFF */
+  --bg-subtle: var(--color-neutral-50); /* #F9FAFB */
+  --bg-selected: var(--color-cream-100); /* #F6E6B9 */
+  --text-primary: var(--color-ink-900); /* #180502 */
+  --text-secondary: var(--color-neutral-500); /* #6B7280 */
+  --text-on-brand: var(--color-neutral-0); /* #FFFFFF */
+  --text-brand: var(--color-maroon-800); /* #401A1B */
+  --text-danger: var(--color-red-500); /* #C91521 */
+  --border-default: var(--color-neutral-200); /* #E5E7EB */
+  --border-strong: var(--color-neutral-300); /* #D1D5DB */
+  --border-brand: var(--color-orange-500); /* #CB4B16 */
+  --action-primary-default: var(--color-orange-500); /* #CB4B16 */
+  --action-primary-hover: var(--color-maroon-800); /* #401A1B */
+  --action-danger-default: var(--color-red-500); /* #C91521 */
+  --action-danger-hover: var(--color-maroon-900); /* #360C0C */
+}
+
+/* ── marca Rose — modo "Rose" no Figma ── */
+[data-brand='rose'] {
+  --bg-surface: var(--color-neutral-0); /* #FFFFFF */
+  --bg-subtle: var(--color-neutral-50); /* #F9FAFB */
+  --bg-selected: var(--color-sand-400); /* #E2B27D */
+  --text-primary: var(--color-maroon-900); /* #360C0C */
+  --text-secondary: var(--color-neutral-500); /* #6B7280 */
+  --text-on-brand: var(--color-neutral-0); /* #FFFFFF */
+  --text-brand: var(--color-plum-700); /* #633040 */
+  --text-danger: var(--color-red-500); /* #C91521 */
+  --border-default: var(--color-neutral-200); /* #E5E7EB */
+  --border-strong: var(--color-neutral-300); /* #D1D5DB */
+  --border-brand: var(--color-rose-600); /* #9E4565 */
+  --action-primary-default: var(--color-rose-600); /* #9E4565 */
+  --action-primary-hover: var(--color-plum-700); /* #633040 */
+  --action-danger-default: var(--color-red-500); /* #C91521 */
+  --action-danger-hover: var(--color-maroon-900); /* #360C0C */
+}
+
+/* ── marca Deep — modo "Deep" no Figma ── */
+[data-brand='deep'] {
+  --bg-surface: var(--color-neutral-0); /* #FFFFFF */
+  --bg-subtle: var(--color-neutral-50); /* #F9FAFB */
+  --bg-selected: var(--color-sky-500); /* #4FA2DC */
+  --text-primary: var(--color-indigo-900); /* #2A1E5B */
+  --text-secondary: var(--color-neutral-500); /* #6B7280 */
+  --text-on-brand: var(--color-neutral-0); /* #FFFFFF */
+  --text-brand: var(--color-indigo-900); /* #2A1E5B */
+  --text-danger: var(--color-red-500); /* #C91521 */
+  --border-default: var(--color-neutral-200); /* #E5E7EB */
+  --border-strong: var(--color-neutral-300); /* #D1D5DB */
+  --border-brand: var(--color-teal-500); /* #0D9288 */
+  --action-primary-default: var(--color-indigo-900); /* #2A1E5B */
+  --action-primary-hover: var(--color-ink-900); /* #180502 */
+  --action-danger-default: var(--color-red-500); /* #C91521 */
+  --action-danger-hover: var(--color-ink-900); /* #180502 */
 }

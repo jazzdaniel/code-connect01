@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { brandAttr, brands, defaultBrand, type Brand } from './tokens/tokens'
 import { Button } from './components/Button'
 import { Chips } from './components/Chips'
 import { EmptyState } from './components/EmptyState'
@@ -37,6 +38,13 @@ export default function App() {
   const toggle = (name: string) =>
     setFilters((f) => (f.includes(name) ? f.filter((x) => x !== name) : [...f, name]))
 
+  // Troca de marca = trocar o modo da collection "Color" no Figma.
+  // Aqui é um atributo no <html>; os blocos [data-brand] de tokens.css fazem o resto.
+  const [brand, setBrand] = useState<Brand>(defaultBrand)
+  useEffect(() => {
+    document.documentElement.dataset.brand = brandAttr(brand)
+  }, [brand])
+
   return (
     <main className="page">
       <h1 className="page__title">Code Connect — mapeamento de componentes</h1>
@@ -44,6 +52,19 @@ export default function App() {
         Como mapear <strong>props</strong>, <strong>variantes</strong>, <strong>imports</strong> e{' '}
         <strong>componentes compostos</strong> entre React/TypeScript e Figma.
       </p>
+
+      <div className="brand-switch">
+        <Chips.Group label="Marca (= modo da collection Color no Figma)">
+          {brands.map((b) => (
+            <Chips.Filter
+              key={b}
+              label={b}
+              selected={brand === b}
+              onClick={() => setBrand(b)}
+            />
+          ))}
+        </Chips.Group>
+      </div>
 
       <Section
         eyebrow="1 · Props e variantes"

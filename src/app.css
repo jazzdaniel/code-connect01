@@ -74,3 +74,13 @@ body {
 .row { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); }
 .row--block { display: block; }
 .stack { display: flex; flex-direction: column; gap: var(--space-6); }
+
+.brand-switch {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  margin: calc(var(--space-6) * -1) 0 calc(var(--space-6) * -1);
+  padding: var(--space-4) 0;
+  background: var(--bg-subtle);
+  border-bottom: var(--border-width-thin) solid var(--border-default);
+}
